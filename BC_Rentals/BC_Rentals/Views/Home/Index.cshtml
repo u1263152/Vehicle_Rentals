@@ -10,20 +10,24 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>View Vehicles and Rentals</h2>
+        <h2>Manage Customers</h2>
         <p>
-            Use this page to check vehicle range and what rentals are booked
+            Use this page to manage customers on the database (Add, Maintain, and Delete).
         </p>
-        <p><a class="btn btn-default" @Html.ActionLink("Check Stock", "StockView", "Home")</a></p>
+        <p><a class="btn btn-default" @Html.ActionLink("Manage Customers", "Index", "Customers")</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Manage Stock</h2>
-        <p>Use this page to manage the stock we have currently (Add, Maintain, and Delete).</p>
-        <p><a class="btn btn-default" @Html.ActionLink("Manage Stock", "CreateVehicle", "Vehicle")</a></p>
+        <h2>Manage Vehicles</h2>
+        <p>
+            Use this page to manage vehicles on the database (Add, Maintain, and Delete).
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Manage Stock", "Index", "Vehicle")</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Book a Rental</h2>
-        <p>Use this page to arrange a rental based on the stock we have currently.</p>
-        <p><a class="btn btn-default" @Html.ActionLink("Book Rental", "BookRentalView", "Home")</a></p>
+        <h2>Manage Rentals</h2>
+        <p>
+            Use this page to manage rentals on the database (Add, Maintain, and Delete).
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Manage Rentals", "Index", "Rental")</a></p>
     </div>
 </div>

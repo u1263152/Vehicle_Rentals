@@ -29,6 +29,15 @@ namespace BC_Rentals.Models
         [Display(Name = "Licence Number")]
         public string Licence { get; set; }
 
+        [Display(Name = "Customer Info")]
+        public string CustomerDetails
+        {
+            get
+            {
+                return First_Name + ", " + Last_Name + ", " + Licence;
+            }
+        }
+
        public virtual ICollection<Rental> Rental { get; set; }
     }
 

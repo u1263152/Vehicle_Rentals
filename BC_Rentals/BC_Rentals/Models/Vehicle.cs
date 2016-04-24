@@ -23,8 +23,19 @@ namespace BC_Rentals.Models
         [Display(Name = "Plate Number")]
         public string Vehicle_Licence { get; set; }
 
+        [DataType(DataType.Currency)]
         [Display(Name = "Cost Per Day")]
         public int Vehicle_Rate { get; set; }
+
+        [Display(Name = "Vehicle Info")]
+        public string VehicleDetails
+        {
+            get
+            {
+                return Vehicle_Manuf + ", " + Vehicle_Model + ", " + Vehicle_Rate + " GBP per day";
+            }
+        }
+
 
         public virtual ICollection<Rental> Rental { get; set; }
     }

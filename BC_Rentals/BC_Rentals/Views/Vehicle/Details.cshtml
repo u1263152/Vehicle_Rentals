@@ -1,0 +1,58 @@
+﻿@model BC_Rentals.Models.Vehicle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vehicle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle_Manuf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle_Manuf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle_Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle_Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle_Colour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle_Colour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle_Licence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle_Licence)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle_Rate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle_Rate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Vehicle_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

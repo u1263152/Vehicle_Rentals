@@ -12,7 +12,11 @@ namespace BC_Rentals.Models
         public int Rental_ID { get; set; }
         public int Customer_ID { get; set; }
         public int Vehicle_ID { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy--MM--dd}", ApplyFormatInEditMode = true)]
         public DateTime Rental_Start { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy--MM--dd}", ApplyFormatInEditMode = true)]
         public DateTime Rental_End { get; set; }
 
 
