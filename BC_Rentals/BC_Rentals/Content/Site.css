@@ -1,12 +1,15 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #C0C0C0; 
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #990000;
+    
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +24,15 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+.navbar-inverse {
+    background-color: navy;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
 }

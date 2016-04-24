@@ -26,5 +26,26 @@ namespace BC_Rentals.Controllers
 
             return View();
         }
+
+        public ActionResult StockView()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult BookRentalView()
+        {
+            ViewBag.Message = "Book a Rental.";
+
+            return View();
+        }
+
+        public ActionResult ManageRentalView()
+        {
+            ViewBag.Message = "Manage Rentals.";
+
+            return View();
+        }
     }
 }
