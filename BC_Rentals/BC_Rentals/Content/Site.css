@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #C0C0C0; 
+     background-image: url(images/USAFlag.png);
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -9,6 +10,8 @@
     padding-left: 15px;
     padding-right: 15px;
     background-color: #990000;
+ 
+
     
 }
 
